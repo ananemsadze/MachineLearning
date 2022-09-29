@@ -32,5 +32,8 @@ from sklearn.neighbors import KNeighborsClassifier
 
 mymodel = KNeighborsClassifier(n_neighbors=1)
 mymodel.fit(X_train, y_train)
-print(mymodel.score(X_test, y_test)) # overwriting, test is lower
-print(mymodel.score(X_train, y_train))
+# print(mymodel.score(X_test, y_test)) # overwriting, test is lower
+# print(mymodel.score(X_train, y_train))
+
+
+
