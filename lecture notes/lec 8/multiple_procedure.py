@@ -27,5 +27,6 @@ print(mymodel.score(X, y))
 hybrid = Pipeline(steps=[(("scaler"), StandardScaler()), ("pca", PCA(n_components=3)), ('algo', Lasso())])
 hybrid.fit(X, y)
 print(hybrid.score(X, y))
-print(hybrid.named_steps['pca'].explained_variance_ratio_[0])
+# print(hybrid.named_steps['pca'].explained_variance_ratio_[0])
+print(np.sum(hybrid.named_steps['pca'].explained_variance_ratio_[0]))
 
